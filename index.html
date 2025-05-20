@@ -1,0 +1,81 @@
+
+<!--
+  Estrutura principal do documento HTML.
+  Define o idioma, codificação e importa o CSS externo para estilização.
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio de Rafael Moraes</title>
+  <link rel = "stylesheet" href = "estilo.css"
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#sobre-mim">Sobre Mim</a>
+      <a href="#formacao">Formação e Idiomas</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  
+    <section id="sobre-mim" style="display: flex; align-items: flex-start; gap: 20px;">
+    <div style="flex: 2;">
+    <h2>Sobre Mim</h2>
+    <img src="rafael.jpg" alt="Rafael Moraes" class="profile-pic"/>
+    <p>Olá! Meu nome é Rafael Moraes, sou engenheiro químico formado pela UNICAMP com intercâmbio na Tennessee Technological University (EUA). Tenho especialização em Engenharia de Processos e atualmente curso Ciência da Computação e Desenvolvimento Full Stack.</p>  <p>Atuo como Principal Consultant Engineer na AspenTech, onde lidero projetos com foco em machine learning, manutenção preditiva e soluções híbridas para a indústria de processos. Tenho ampla experiência com ferramentas como Aspen HYSYS, Aspen Plus, ProMV e Mtell.</p>
+    <p>Sou apaixonado por ensinar e já ministrei mais de 50 treinamentos técnicos em português, inglês e espanhol. Também sou autor de artigos e materiais de boas práticas internas.</p>
+    <p>Fora do trabalho, adoro cozinhar (e comer!), tocar violão, viajar, treinar meus cães e assistir séries. Estudei Linguística e Literatura na USP por três anos e sou um grande entusiasta de livros e também do mercado financeiro.</p>
+    </div>
+    <div style="flex: 1;">
+    <img src="Hobbies.jpg" alt="Colagem de interesses de Rafael Moraes" style="width: 100%; border-radius: 8px;">    
+    </div>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação e Idiomas</h2>
+    <ul>
+      <li>MBA em Data Science e Analytics – USP/Esalq (2022–2024)</li>
+      <li>Especialização em Engenharia de Processos – UNICAMP (2017–2019)</li>
+      <li>Engenharia Química – UNICAMP (2008–2014)</li>
+      <li>Engenharia Química – TTU, EUA (2012–2013)</li>
+      <li>Ciência da Computação – UNINTER (2024–2027)</li>
+      <li>Desenvolvimento Full Stack – PUCRS (2024–2025)</li>
+      <li>Linguística e Literatura – USP (2016–2018)</li>
+    </ul>
+    <h3>Idiomas</h3>
+    <ul>
+      <li>Português – Nativo</li>
+      <li>Inglês – Proficiente</li>
+      <li>Espanhol – Proficiente</li>
+      <li>Alemão – Avançado</li>
+      <li>Francês – Intermediário</li>
+      <li>Russo – Iniciante</li>
+      <li>Mandarim – Iniciante</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <p>Confira meus projetos no <a href="https://github.com/rafaelmoraes08/Data-Science-Projects-with-Python" target="_blank">Data Science Projects with Python</a>.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="form-contato">
+      <input type="text" name="nome" placeholder="Nome" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
+  
+  <!-- Importa o script JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
